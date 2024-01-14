@@ -1,0 +1,158 @@
+/*modile device*/
+@media screen and (max-width:600px) {
+  /*header area responsive*/
+    .nav-area{
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+        justify-content: start;
+    
+    }
+    .nav{
+        display: flex;
+        flex-direction: column;
+    }
+
+    /*hero area responsive */
+    .hero-area{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .hero-content{
+        width:100%;
+    }
+    .hero-img{
+        width:100%;
+        padding-top: 20px;
+    }
+    .hero-img img{
+        width: 80%;
+        display: block;
+        margin: auto;
+
+    }
+    .hero-content h1{
+       text-align: center;
+        margin:5px;
+        font-size: 26px;
+    }
+    .hero-content p{
+        color:var(--gray-color);
+        font-size: 16px;
+        text-align: center;
+        font-weight: 200;
+        line-height: 30px;
+    
+    }
+    .hero-content button{
+       display: block;
+       width: 200px;
+       margin:auto;
+       text-align: center;
+    }
+    /*companis name responsive*/
+    .companis-names{
+        grid-template-columns: repeat(3,1fr);
+        justify-content: space-around;
+        align-items: center;
+        border:1px solid black;
+        padding:10px 0;
+    }
+
+    /*cards area responsive*/
+
+    .cards{
+
+        grid-gap: 20px 50px;
+        padding:10px 5px;
+        grid-template-columns: repeat(1 ,1fr);
+    
+    }
+    /*feture area responsive*/
+    .return-area{
+        flex-direction: column-reverse;
+        
+        
+    }
+    .feture-img{
+        width:100%;
+    
+    }
+    .feturn-context{
+        width:100%;
+        padding:10px 0;
+    }
+    .feturn-context h1{
+
+        font-size: 28px;
+        font-weight: 300;
+    
+        margin:5px;
+    
+    }
+    .feturn-context p{
+        font-size: 12px;
+        font-weight: 200;
+    }
+    .feturn-context button{
+        padding:5px 10px;
+        font-size: 12px;
+      
+    }
+}
+
+/*tablate device responsive style*/
+
+@media screen and (min-width:601px) and (max-width:900px) {
+    .nav-area>a{
+        font-size: 16px;
+        font-weight: 300;
+    
+    }
+     
+   
+    .nav-area ul li a{
+        margin-left: 30px;
+        font-size: 12px;
+    
+    }
+
+    /*hero area responsive*/
+    .hero-content{
+        width:50%;
+    }
+    .hero-content h1{
+        font-size: 32px;
+        font-weight: 300;
+    }
+    .hero-content p{
+        
+        font-size: 12px;
+        font-weight: 200;
+        line-height: 30px;
+    }
+    .hero-content button{
+   
+        font-size: 12px;
+        font-weight: 200;
+        padding:5px 2px;
+    }
+    .hero-img{
+        width:50%;
+    }
+    /*company area responsive*/
+    .companis-names{
+        grid-template-columns: repeat(4,1fr);
+
+    }
+    .companis-names img{
+        width:50%;
+        margin:10px auto;
+       
+    }
+    /*popular collection responsive*/
+    .cards{
+        grid-template-columns: repeat(2 ,1fr);
+    }
+}
